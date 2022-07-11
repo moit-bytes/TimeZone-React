@@ -1,0 +1,145 @@
+.nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 6px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav--image {
+  height: 60px;
+  width: 60px;
+}
+
+.nav--title {
+  font-family: "Quicksand";
+  font-size: 1rem;
+}
+
+.page--title {
+  font-family: "Quicksand";
+  font-weight: 400;
+  font-size: 3.5rem;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+.page--form {
+  font-family: "Quicksand";
+  font-size: 1rem;
+  background-color: #ffffff;
+  display: flex;
+  gap: 3%;
+  align-items: center;
+  margin-left: 20%;
+  padding: 20px;
+  border-radius: 20px;
+  width: 35%;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.page--div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.page--dropdown {
+  background-color: #ffffff;
+  width: 20vw;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid--container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2%;
+  margin: 5%;
+}
+.grid--card {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Quicksand";
+  overflow-wrap: break-word;
+}
+
+.card--title {
+  text-align: center;
+  font-size: 2rem;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  padding: 5px;
+}
+
+.card--body {
+  font-size: 1rem;
+  margin: 4px;
+  font-weight: 300;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  padding: 5px;
+
+}
+#item-1 {
+  grid-column: 1 / span 2;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid--container {
+    grid-template-columns: auto auto;
+    gap: 2%;
+    margin: 5%;
+  }
+  .page--form
+  {
+    width: 50%;
+  }
+  .page--dropdown {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+    .grid--container {
+      grid-template-columns: auto;
+      gap: 2%;
+      margin: 5%;
+    }
+    #item-1 {
+        grid-column: auto;
+      }
+    .page--form
+    {
+      width: 50%;
+    }
+    .page--dropdown {
+      width: 40vw;
+    }
+    .page--div
+    {
+        gap:5px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .page--form
+    {
+      width: 70%;
+      margin: auto;
+    }
+    .page--dropdown {
+      width: 50vw;
+    }
+    .page--div
+    {
+        gap:5px;
+    }
+  }
